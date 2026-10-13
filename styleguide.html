@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Guide — Byte &amp; Scale</title>
+<link rel="stylesheet" href="design-system/tokens.css">
+<link rel="stylesheet" href="design-system/base.css">
+<link rel="stylesheet" href="design-system/components.css">
+<style>
+  .trace { font-family: var(--font-mono); font-size: var(--text-sm); background: var(--color-mist); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-4); }
+  .trace-step { margin: 0 0 var(--space-2); }
+  .trace-arrow { color: var(--color-text-muted); }
+  .swatch { display: inline-block; width: 28px; height: 28px; border-radius: var(--radius-md); vertical-align: middle; margin-right: var(--space-2); border: 1px solid var(--color-border); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a class="nav-brand" href="index.html">Byte &amp; <span>Scale</span></a>
+    <div class="nav-links">
+      <a href="python-track.html">Python</a>
+      <a href="system-design-track.html">System Design</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">Instructors</a>
+      <a href="styleguide.html">Style Guide</a>
+      <a class="btn btn-primary" href="contact.html">Book a session</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero section-muted">
+  <div class="container">
+    <h1>Style guide</h1>
+    <p class="text-muted">Living component reference. Every component here pulls its values
+      from <code>design-system/tokens.css</code> — see
+      <a href="https://github.com">design-system/style-guide.md</a> for the numbered rules
+      behind each token.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2>Traceability example</h2>
+    <p class="text-muted">The pass condition this page exists to satisfy: pick one component
+      and trace its values back through a token to a specific style-guide rule, with no gaps.</p>
+    <div class="trace">
+      <p class="trace-step"><strong>1. Component</strong> — <code>.card-course</code> in
+        <code>design-system/components.css</code>:</p>
+      <p class="trace-step">&nbsp;&nbsp;<code>box-shadow: var(--shadow-block);</code></p>
+      <p class="trace-step text-center"><span class="trace-arrow">&darr;</span></p>
+      <p class="trace-step"><strong>2. Token</strong> — <code>design-system/tokens.css</code>:</p>
+      <p class="trace-step">&nbsp;&nbsp;<code>--shadow-block: .35rem .35rem 0 var(--color-ink);</code></p>
+      <p class="trace-step text-center"><span class="trace-arrow">&darr;</span></p>
+      <p class="trace-step"><strong>3. Style-guide rule</strong> — <code>design-system/style-guide.md</code>, <strong>SHADOW-2</strong>:</p>
+      <p class="trace-step">&nbsp;&nbsp;"Course/module cards use <code>--shadow-block</code>, not <code>--shadow-soft</code> &mdash;
+        the same hard offset shape as educative.io's module-tile shadow."</p>
+      <p class="trace-step text-center"><span class="trace-arrow">&darr;</span></p>
+      <p class="trace-step"><strong>4. Reference evidence</strong> — <code>references/NOTES.md</code>, educative.io section:</p>
+      <p class="trace-step">&nbsp;&nbsp;<code>box-shadow:0 0 .25rem rgba(0,0,0,.15),.5rem .5rem 0 #172963</code> &mdash;
+        grepped live from educative.io's production CSS.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted">
+  <div class="container">
+    <h2>Color tokens</h2>
+    <p><span class="swatch" style="background:var(--color-primary)"></span>--color-primary (COLOR-1)</p>
+    <p><span class="swatch" style="background:var(--color-primary-dark)"></span>--color-primary-dark (COLOR-1)</p>
+    <p><span class="swatch" style="background:var(--color-accent)"></span>--color-accent (COLOR-2)</p>
+    <p><span class="swatch" style="background:var(--color-indigo)"></span>--color-indigo (COLOR-4)</p>
+    <p><span class="swatch" style="background:var(--color-ink)"></span>--color-ink (COLOR-4)</p>
+    <p><span class="swatch" style="background:var(--color-success)"></span>--color-success (COLOR-3)</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Buttons</h2>
+    <div class="row">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-indigo">Indigo</button>
+      <button class="btn btn-outline">Outline</button>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted">
+  <div class="container">
+    <h2>Cards</h2>
+    <div class="grid grid-2">
+      <div class="card card-course">
+        <span class="badge-track badge-track--python">Python</span>
+        <h3>.card-course</h3>
+        <p class="text-muted">Block shadow (SHADOW-2). Used for curriculum/technical content.</p>
+      </div>
+      <div class="card card-trust">
+        <span class="badge-track badge-track--system-design">System Design</span>
+        <h3>.card-trust</h3>
+        <p class="text-muted">Soft shadow (SHADOW-1). Used for pricing/testimonial/instructor content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Badges</h2>
+    <div class="row">
+      <span class="badge-level badge-level--beginner">Beginner</span>
+      <span class="badge-level badge-level--intermediate">Intermediate</span>
+      <span class="badge-level badge-level--advanced">Advanced</span>
+      <span class="badge-success">3 seats left</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted">
+  <div class="container">
+    <h2>Code block</h2>
+    <div class="code-block"><pre>--font-mono: Consolas, "Lucida Console", ...;  /* TYPE-2, copied from python.org */</pre></div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container row" style="justify-content:space-between;">
+    <div>Byte &amp; Scale Tutoring</div>
+    <div class="row">
+      <a href="python-track.html">Python</a>
+      <a href="system-design-track.html">System Design</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="text-muted">&copy; 2026 Byte &amp; Scale</div>
+  </div>
+</footer>
+</body>
+</html>

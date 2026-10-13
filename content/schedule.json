@@ -1,0 +1,8 @@
+[
+  { "id": "py-mon-eve", "track": "python", "day": "Mon", "start_time": "18:00", "end_time": "19:00", "format": "1:1", "seats_available": 3 },
+  { "id": "py-wed-eve", "track": "python", "day": "Wed", "start_time": "18:00", "end_time": "19:00", "format": "1:1", "seats_available": 2 },
+  { "id": "py-sat-group", "track": "python", "day": "Sat", "start_time": "10:00", "end_time": "11:30", "format": "group", "seats_available": 5 },
+  { "id": "sd-tue-eve", "track": "system-design", "day": "Tue", "start_time": "19:00", "end_time": "20:00", "format": "1:1", "seats_available": 2 },
+  { "id": "sd-thu-eve", "track": "system-design", "day": "Thu", "start_time": "19:00", "end_time": "20:00", "format": "1:1", "seats_available": 1 },
+  { "id": "sd-sun-group", "track": "system-design", "day": "Sun", "start_time": "11:00", "end_time": "12:30", "format": "group", "seats_available": 4 }
+]

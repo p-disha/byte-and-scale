@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schedule.schema.json",
+  "title": "Weekly available session slots",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "track", "day", "start_time", "end_time", "format", "seats_available"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "track": { "type": "string", "enum": ["python", "system-design"] },
+      "day": { "type": "string", "enum": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] },
+      "start_time": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" },
+      "end_time": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" },
+      "format": { "type": "string", "enum": ["1:1", "group"] },
+      "seats_available": { "type": "integer", "minimum": 0, "maximum": 20 }
+    }
+  }
+}

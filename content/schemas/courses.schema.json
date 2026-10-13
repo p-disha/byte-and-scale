@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "courses.schema.json",
+  "title": "Course module catalog",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "track", "title", "level", "duration_weeks", "order", "summary", "topics"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "description": "Kebab-case, unique within the catalog"
+      },
+      "track": {
+        "type": "string",
+        "enum": ["python", "system-design"]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 60
+      },
+      "level": {
+        "type": "string",
+        "enum": ["beginner", "intermediate", "advanced"]
+      },
+      "duration_weeks": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 12
+      },
+      "order": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Position of this module within its track's curriculum, 1-based"
+      },
+      "summary": {
+        "type": "string",
+        "minLength": 10,
+        "maxLength": 200
+      },
+      "topics": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 8,
+        "items": { "type": "string", "minLength": 2, "maxLength": 60 }
+      },
+      "prerequisites": {
+        "type": "array",
+        "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+      }
+    }
+  }
+}

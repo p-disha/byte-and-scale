@@ -1,0 +1,30 @@
+[
+  {
+    "id": "jordan-r",
+    "student_name": "Jordan R.",
+    "track": "python",
+    "quote": "I went from copy-pasting Stack Overflow answers to actually understanding decorators well enough to write my own. Dana never let me move on until I could explain why, not just what.",
+    "rating": 5
+  },
+  {
+    "id": "amy-l",
+    "student_name": "Amy L.",
+    "track": "system-design",
+    "quote": "Marcus's mock interviews were harder than my real ones. I walked into my onsite already calm because I'd done this exact whiteboard exercise three times.",
+    "rating": 5
+  },
+  {
+    "id": "sam-k",
+    "student_name": "Sam K.",
+    "track": "system-design",
+    "quote": "The back-of-envelope estimation module alone was worth the price. I used it in an interview the following week.",
+    "rating": 4
+  },
+  {
+    "id": "taylor-m",
+    "student_name": "Taylor M.",
+    "track": "python",
+    "quote": "Priya helped me connect my Python scripts to how they'd actually run in production. That context was missing from every course I'd tried before.",
+    "rating": 5
+  }
+]

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Session — Byte &amp; Scale</title>
+<link rel="stylesheet" href="design-system/tokens.css">
+<link rel="stylesheet" href="design-system/base.css">
+<link rel="stylesheet" href="design-system/components.css">
+</head>
+<body>
+<!--NAV-->
+
+<header class="hero section-muted text-center">
+  <div class="container">
+    <h1>Book a session</h1>
+    <p class="text-muted">Pick an open slot below, then send the form — we'll confirm by email.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container grid grid-2" style="align-items:flex-start;">
+    <div>
+      <h3>This week's open slots</h3>
+      <div class="stack"><!--SCHEDULE--></div>
+    </div>
+    <form class="card card-trust">
+      <div class="field">
+        <label for="name">Name</label>
+        <input class="input" id="name" name="name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input class="input" id="email" name="email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="track">Track</label>
+        <select class="select" id="track" name="track">
+          <option value="python">Python</option>
+          <option value="system-design">System Design</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">What do you want to work on?</label>
+        <textarea class="textarea" id="message" name="message" rows="4"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Request a session</button>
+    </form>
+  </div>
+</section>
+
+<section class="section section-muted">
+  <div class="container" style="max-width:720px;">
+    <h2 class="text-center">FAQ</h2>
+    <details class="accordion-item">
+      <summary>How long is a session?</summary>
+      <p class="text-muted">60 minutes, 1:1. Group sessions run 90 minutes.</p>
+    </details>
+    <details class="accordion-item">
+      <summary>Can I switch between tracks?</summary>
+      <p class="text-muted">Yes — the Monthly Momentum plan is built for mixing both freely.</p>
+    </details>
+    <details class="accordion-item">
+      <summary>Do I need prior experience?</summary>
+      <p class="text-muted">No for the Python track's first module. The System Design track
+        assumes basic programming familiarity.</p>
+    </details>
+  </div>
+</section>
+
+<!--FOOTER-->
+</body>
+</html>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "single-session",
+    "name": "Single Session",
+    "price_usd": 65,
+    "billing_unit": "per-session",
+    "sessions_included": 1,
+    "features": ["60-minute 1:1 session", "Pick Python or System Design", "Session notes included"],
+    "highlighted": false
+  },
+  {
+    "id": "monthly-momentum",
+    "name": "Monthly Momentum",
+    "price_usd": 220,
+    "billing_unit": "per-month",
+    "sessions_included": 4,
+    "features": ["4 sessions per month", "Mix tracks freely", "Homework review between sessions", "Priority scheduling"],
+    "highlighted": true
+  },
+  {
+    "id": "interview-sprint",
+    "name": "Interview Sprint",
+    "price_usd": 480,
+    "billing_unit": "one-time",
+    "sessions_included": 8,
+    "features": ["8 sessions in 3 weeks", "Mock system design interviews", "Resume & portfolio review", "Whiteboard practice"],
+    "highlighted": false
+  }
+]

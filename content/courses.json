@@ -1,0 +1,230 @@
+[
+  {
+    "id": "python-foundations",
+    "track": "python",
+    "title": "Python Foundations",
+    "level": "beginner",
+    "duration_weeks": 2,
+    "order": 1,
+    "summary": "Syntax, variables, control flow, and how to actually read a traceback.",
+    "topics": [
+      "Variables & types",
+      "Control flow",
+      "Functions",
+      "Error handling & tracebacks"
+    ]
+  },
+  {
+    "id": "python-data-structures",
+    "track": "python",
+    "title": "Data Structures That Matter",
+    "level": "beginner",
+    "duration_weeks": 2,
+    "order": 2,
+    "summary": "Lists, dicts, sets, and tuples — and the judgment to pick the right one.",
+    "topics": [
+      "Lists, tuples, sets, dicts",
+      "Comprehensions",
+      "Slicing",
+      "Choosing the right structure"
+    ],
+    "prerequisites": [
+      "python-foundations"
+    ]
+  },
+  {
+    "id": "python-oop",
+    "track": "python",
+    "title": "Object-Oriented Python",
+    "level": "intermediate",
+    "duration_weeks": 2,
+    "order": 3,
+    "summary": "Classes, inheritance, composition, and the dunder methods that make them idiomatic.",
+    "topics": [
+      "Classes & objects",
+      "Inheritance vs. composition",
+      "Dunder methods",
+      "Dataclasses"
+    ],
+    "prerequisites": [
+      "python-data-structures"
+    ]
+  },
+  {
+    "id": "python-decorators-generators",
+    "track": "python",
+    "title": "Decorators & Generators",
+    "level": "intermediate",
+    "duration_weeks": 2,
+    "order": 4,
+    "summary": "The Python features that separate scripts from software: closures, decorators, and lazy iteration.",
+    "topics": [
+      "Closures",
+      "Decorators",
+      "Generators & iterators",
+      "Context managers"
+    ],
+    "prerequisites": [
+      "python-oop"
+    ]
+  },
+  {
+    "id": "python-testing",
+    "track": "python",
+    "title": "Testing & TDD",
+    "level": "intermediate",
+    "duration_weeks": 1,
+    "order": 5,
+    "summary": "Write tests that catch real bugs, with pytest and a test-first habit.",
+    "topics": [
+      "pytest basics",
+      "Fixtures",
+      "Mocking",
+      "Test-driven development"
+    ],
+    "prerequisites": [
+      "python-decorators-generators"
+    ]
+  },
+  {
+    "id": "python-apis-capstone",
+    "track": "python",
+    "title": "APIs & Capstone Project",
+    "level": "advanced",
+    "duration_weeks": 3,
+    "order": 6,
+    "summary": "Build and ship a real FastAPI service, backed by a database, as your capstone.",
+    "topics": [
+      "Building a REST API with FastAPI",
+      "Working with a database layer",
+      "Deployment basics",
+      "Capstone project review"
+    ],
+    "prerequisites": [
+      "python-testing"
+    ]
+  },
+  {
+    "id": "sysdesign-fundamentals",
+    "track": "system-design",
+    "title": "System Design Fundamentals",
+    "level": "beginner",
+    "duration_weeks": 1,
+    "order": 1,
+    "summary": "The vocabulary and estimation skills every system design conversation assumes you already have.",
+    "topics": [
+      "Client-server model",
+      "Latency vs. throughput",
+      "Back-of-envelope estimation",
+      "Reading a system diagram"
+    ]
+  },
+  {
+    "id": "sysdesign-scaling-basics",
+    "track": "system-design",
+    "title": "Scaling Basics",
+    "level": "beginner",
+    "duration_weeks": 2,
+    "order": 2,
+    "summary": "How a service goes from handling ten users to ten million.",
+    "topics": [
+      "Vertical vs. horizontal scaling",
+      "Load balancing",
+      "Stateless services",
+      "Horizontal scaling patterns"
+    ],
+    "prerequisites": [
+      "sysdesign-fundamentals"
+    ]
+  },
+  {
+    "id": "sysdesign-databases-caching",
+    "track": "system-design",
+    "title": "Databases & Caching",
+    "level": "intermediate",
+    "duration_weeks": 2,
+    "order": 3,
+    "summary": "SQL vs. NoSQL trade-offs, indexing, and the caching strategies that keep a system fast.",
+    "topics": [
+      "SQL vs. NoSQL trade-offs",
+      "Indexing",
+      "Caching strategies",
+      "Cache invalidation"
+    ],
+    "prerequisites": [
+      "sysdesign-scaling-basics"
+    ]
+  },
+  {
+    "id": "sysdesign-queues-microservices",
+    "track": "system-design",
+    "title": "Queues & Microservices",
+    "level": "intermediate",
+    "duration_weeks": 2,
+    "order": 4,
+    "summary": "Decoupling services with queues, events, and the trade-offs of going distributed.",
+    "topics": [
+      "Message queues",
+      "Microservices vs. monoliths",
+      "Event-driven architecture",
+      "API gateways"
+    ],
+    "prerequisites": [
+      "sysdesign-databases-caching"
+    ]
+  },
+  {
+    "id": "sysdesign-case-studies",
+    "track": "system-design",
+    "title": "Case Studies",
+    "level": "advanced",
+    "duration_weeks": 2,
+    "order": 5,
+    "summary": "Design real systems end-to-end: a URL shortener, a chat system, a news feed.",
+    "topics": [
+      "Designing a URL shortener",
+      "Designing a chat system",
+      "Designing a news feed",
+      "Trade-off discussions"
+    ],
+    "prerequisites": [
+      "sysdesign-queues-microservices"
+    ]
+  },
+  {
+    "id": "sysdesign-capstone",
+    "track": "system-design",
+    "title": "Interview Capstone",
+    "level": "advanced",
+    "duration_weeks": 3,
+    "order": 6,
+    "summary": "Mock interviews and a final architecture review, built to interview-day pacing.",
+    "topics": [
+      "Mock interview practice",
+      "Designing at scale",
+      "Capstone architecture review",
+      "Presenting trade-offs"
+    ],
+    "prerequisites": [
+      "sysdesign-case-studies"
+    ]
+  },
+  {
+    "id": "async-python-concurrency",
+    "track": "python",
+    "title": "Async Python & Concurrency",
+    "level": "advanced",
+    "duration_weeks": 2,
+    "order": 7,
+    "summary": "asyncio, coroutines, and when concurrency actually helps your program.",
+    "topics": [
+      "async/await syntax",
+      "Coroutines & the event loop",
+      "Threading vs. multiprocessing vs. asyncio",
+      "When concurrency does not help"
+    ],
+    "prerequisites": [
+      "python-decorators-generators"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "dana-osei",
+    "name": "Dana Osei",
+    "role": "Lead Python Instructor",
+    "bio": "Dana spent eight years writing backend Python at scale-ups before moving to full-time teaching. She focuses on getting students comfortable reading their own tracebacks before they write a single design pattern.",
+    "credentials": ["8 years backend engineering at scale-ups", "Former PyCon workshop lead", "B.S. Computer Science"],
+    "specialties": ["python"],
+    "initials": "DO"
+  },
+  {
+    "id": "marcus-feldman",
+    "name": "Marcus Feldman",
+    "role": "System Design Coach",
+    "bio": "Marcus is a staff engineer who has sat on both sides of over 200 system design interviews. He teaches trade-off thinking first, diagrams second.",
+    "credentials": ["Staff engineer, distributed systems", "Conducted 200+ system design interviews", "M.S. Computer Science"],
+    "specialties": ["system-design"],
+    "initials": "MF"
+  },
+  {
+    "id": "priya-nair",
+    "name": "Priya Nair",
+    "role": "Full-Stack Mentor",
+    "bio": "Priya bridges both tracks, helping students connect the Python they write to the systems it eventually has to run inside of.",
+    "credentials": ["6 years full-stack engineering", "Built and scaled a Django monolith to microservices", "Mentor, Women Who Code"],
+    "specialties": ["python", "system-design"],
+    "initials": "PN"
+  }
+]
